@@ -1,0 +1,9 @@
+[workspace]
+members = ["client_lib"]
+
+[workspace.package]
+# shared version of all public crates in the workspace
+version = "0.1.0"
+
+[workspace.dependencies]
+foo = { package = "borsh", version = "1.1.1",  git = "https://github.com/serprex/borsh-rs.git", branch = "master", features = ["derive"] }
